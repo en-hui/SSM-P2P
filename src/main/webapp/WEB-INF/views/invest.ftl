@@ -19,7 +19,10 @@
 		searchForm.submit();
 		
 		$("input[name=bidRequestState]").change(function(){
-			$("#currentPage").val(1);
+            //页面重载时置空分页数据（属于分页插件）
+            $('#pagination').empty();
+            $('#pagination').removeData("twbs-pagination");
+            $('#pagination').unbind('page');
 			searchForm.submit();
 		});
 	});
