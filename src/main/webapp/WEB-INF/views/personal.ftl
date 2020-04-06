@@ -331,8 +331,5 @@
         </div>
 		</#if>
 
-		
-		
-		<#include "common/footer-tpl.ftl" />
 	</body>
 </html>
